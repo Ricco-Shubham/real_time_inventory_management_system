@@ -1,6 +1,7 @@
 from utils.DataBase import database
 from utils.UserObject import Customer, Admin
 from dotenv import load_dotenv
+import sys
 
 load_dotenv()  # Load environment variables from .env file
 database.get_db_config()
@@ -82,7 +83,7 @@ while True:
                     print("Invalid choice. Please enter a number between 1 and 5.")
     if user_type == 'q':
         print("Exiting the Inventory Management System. Goodbye!")
-        break
+        sys.exit(0)
     else:
         print("Invalid user type. Please enter 'c' for customer or 'a' for admin.")
         continue

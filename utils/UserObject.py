@@ -1,6 +1,8 @@
 import bcrypt
+import getpass
 from utils.DataBase import database
 from utils.insightsgenerator import DataInsightsReport
+
 
 # Function to hash passwords using bcrypt
 # This function generates a salt and hashes the password using bcrypt
@@ -45,7 +47,7 @@ class Customer:
             print("Phone number already registered. Please log in.\n")
             return None
         else:
-            self.__password = input("Enter your password: ")
+            self.__password = getpass.getpass("Enter your password: ")
             return 1
 
     def __print_data(self, result, columns=None, title="Table Data"):
@@ -88,7 +90,7 @@ class Customer:
 
     def login(self):
         self.phone_no = input("Enter your phone number: ")
-        self.__password = input("Enter your password: ")
+        self.__password = getpass.getpass("Enter your password: ")
         self.verify_password(self.__password)
         self.authenticate()
         try:
@@ -306,7 +308,7 @@ class Admin:
 
     def login(self):
         self.username = input("Enter admin username: ")
-        self.__password = input("Enter admin password: ")
+        self.__password = getpass.getpass("Enter admin password: ")
         if self.username == "admin" and self.__password == "admin@123":
             self.__is_logged_in = True
             print("Admin login successful.")
