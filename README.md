@@ -25,4 +25,4 @@ This project is a Python-based real-time inventory management system designed to
 - Expose REST APIs for frontend or mobile integration
 
 ## Video Demo of Project
-- https://www.linkedin.com/posts/riccoshubham_python-supabase-postgresql-ugcPost-7371959764836306944-xWxd?utm_source=share&utm_medium=member_desktop&rcm=ACoAADE2h3cBX01qWrGrBr3icVyP1A2Uh21b9hE
+- [!Watch the video](https://www.linkedin.com/posts/riccoshubham_python-supabase-postgresql-ugcPost-7371959764836306944-xWxd?utm_source=share&utm_medium=member_desktop&rcm=ACoAADE2h3cBX01qWrGrBr3icVyP1A2Uh21b9hE)
