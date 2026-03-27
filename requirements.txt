@@ -3,5 +3,7 @@ numpy
 matplotlib
 reportlab
 psycopg2-binary
-dotenv
-os
+python-dotenv
+streamlit
+plotly
+bcrypt
