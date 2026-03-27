@@ -6,11 +6,11 @@ class database:
     # Fetch database configuration from environment variables
     @classmethod
     def get_db_config(cls):
-        cls.user = os.getenv('user')
-        cls.__password = os.getenv('password')
-        cls.host = os.getenv('host')
-        cls.dbname = os.getenv('dbname')
-        cls.port = os.getenv('port')
+        cls.user = os.getenv('USER')
+        cls.__password = os.getenv('PASSWORD')
+        cls.host = os.getenv('HOST')
+        cls.dbname = os.getenv('DBNAME')
+        cls.port = os.getenv('PORT')
         # Return config as a dictionary
         return {
             'user': cls.user,
