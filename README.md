@@ -28,13 +28,7 @@ This project is a Python-based real-time inventory management system designed to
 
 ## ⚙️ Setup and Run (Step-by-Step)
 
-### 1. Move to project folder
-
-```bash
-cd Real_time_inven_tracking/Code
-```
-
-### 2. Create and activate virtual environment
+### 1. Create and activate virtual environment
 
 Windows (PowerShell):
 
@@ -57,13 +51,13 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3. Install required packages
+### 2. Install required packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure environment variables
+### 3. Configure environment variables
 
 Create a `.env` file inside the `Code` folder and add:
 
@@ -77,7 +71,7 @@ port=5432
 
 Note: These exact variable names are used by the app in `utils/DataBase.py`.
 
-### 5. Initialize database tables
+### 4. Initialize database tables
 
 Your app expects these tables:
 
@@ -143,7 +137,7 @@ CREATE TABLE IF NOT EXISTS order_items (
 );
 ```
 
-### 6. Load product data into `zepto_v2`
+### 5. Load product data into `zepto_v2`
 
 Import the CSV file at:
 
@@ -151,7 +145,7 @@ Import the CSV file at:
 
 You can import this through Supabase Table Editor (CSV import) for table `zepto_v2`.
 
-### 7. Start the Streamlit app
+### 6. Start the Streamlit app
 
 ```bash
 streamlit run streamlit_app.py
@@ -159,7 +153,7 @@ streamlit run streamlit_app.py
 
 App should open automatically in browser (usually on `http://localhost:8501`).
 
-### 8. Login details
+### 7. Login details
 
 - Admin login:
   - Username: `admin`
