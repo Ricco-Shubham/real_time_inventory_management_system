@@ -17,7 +17,7 @@ This project is a Python-based real-time inventory management system designed to
 - Language: Python (OOP)
 - Database: Supabase (PostgreSQL)
 - ORM/DB Driver: psycopg2 (connection pooling enabled)
-- Visualization: Matplotlib / Seaborn (optional for analytics)
+- Visualization: Matplotlib / Seaborn
 - Version Control: Git + GitHub
 
 ## 🚀 Future Improvements
