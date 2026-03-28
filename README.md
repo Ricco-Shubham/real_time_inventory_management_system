@@ -65,11 +65,11 @@ pip install -r requirements.txt
 Create a `.env` file inside the `Code` folder and add:
 
 ```env
-user=YOUR_DB_USER
-password=YOUR_DB_PASSWORD
-host=YOUR_DB_HOST
-dbname=YOUR_DB_NAME
-port=5432
+DB_USER=YOUR_DB_USER
+DB_PASSWORD=YOUR_DB_PASSWORD
+DB_HOST=YOUR_DB_HOST
+DB_NAME=YOUR_DB_NAME
+DB_PORT=5432
 ```
 
 Note: These exact variable names are used by the app in `utils/DataBase.py`.
