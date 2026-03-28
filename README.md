@@ -27,7 +27,7 @@ This project is a Python-based real-time inventory management system designed to
 - `pip` installed
 
 ## Deployment workflow
-![image](mermain-diagram.png)
+![image](mermaid-diagram.png)
 
 ## ⚙️ Setup and Run (Step-by-Step)
 
