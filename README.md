@@ -2,7 +2,8 @@
 
 This project is a Python-based real-time inventory management system designed to help shop owners efficiently track, manage, and record stock, customer orders, and sales. It uses Supabase (PostgreSQL in the cloud) as the backend database, and integrates OOP principles, database transactions, and secure password handling to ensure reliability and scalability.
 
-![Project Video tutorial](https://youtu.be/sA5f6FHjYlY?si=vS2fnnHU-TJdiDfu)
+#Watch the working of web app
+[![Watch Demo](https://img.youtube.com/vi/sA5f6FHjYlY/0.jpg)](https://youtu.be/sA5f6FHjYlY)
 
 ## ✨ Features
 
