@@ -26,6 +26,9 @@ This project is a Python-based real-time inventory management system designed to
 - A Supabase project (or any PostgreSQL database)
 - `pip` installed
 
+## Deployment workflow
+![image](mermain-diagram.png)
+
 ## ⚙️ Setup and Run (Step-by-Step)
 
 ### 1. Create and activate virtual environment
