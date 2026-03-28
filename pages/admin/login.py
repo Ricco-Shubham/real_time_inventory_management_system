@@ -15,6 +15,8 @@ def render_admin_login():
                 st.session_state.user_type = "admin"
                 st.session_state.is_logged_in = True
                 st.session_state.current_page = "admin_dashboard"
+                st.query_params["user_type"] = "admin"
+                st.query_params["is_logged_in"] = "true"
                 st.rerun()
             else:
                 st.error("Invalid admin credentials.")

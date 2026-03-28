@@ -29,6 +29,11 @@ def render_login():
                             st.session_state.phone_no = phone
                             st.session_state.is_logged_in = True
                             st.session_state.current_page = "grocery"
+                            st.query_params["user_type"] = "customer"
+                            st.query_params["is_logged_in"] = "true"
+                            st.query_params["customer_id"] = str(result[0][0])
+                            st.query_params["username"] = result[0][1]
+                            st.query_params["phone_no"] = phone
                             st.rerun()
                         else:
                             st.error("User not found in DB.")

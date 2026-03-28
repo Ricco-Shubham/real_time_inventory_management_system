@@ -52,13 +52,16 @@ section[data-testid="stSidebar"] {
 
 # ── Session state bootstrap ───────────────────────────────────────────────────
 defaults = {
-    "user_type": None,        # "customer" | "admin"
-    "is_logged_in": False,
-    "customer_id": None,
-    "phone_no": None,
-    "username": None,
-    "current_page": "home",   # internal page router
+    "user_type": st.query_params.get("user_type"),
+    "is_logged_in": st.query_params.get("is_logged_in") == "true",
+    "customer_id": int(st.query_params.get("customer_id")) if st.query_params.get("customer_id") else None,
+    "phone_no": st.query_params.get("phone_no"),
+    "username": st.query_params.get("username"),
+    "current_page": "home",
 }
+if defaults["is_logged_in"] and defaults["user_type"]:
+    defaults["current_page"] = "admin_dashboard" if defaults["user_type"] == "admin" else "grocery"
+
 for k, v in defaults.items():
     if k not in st.session_state:
         st.session_state[k] = v
@@ -87,6 +90,7 @@ def render_sidebar():
                 for k in ["user_type", "is_logged_in", "customer_id", "phone_no", "username"]:
                     st.session_state[k] = None if k != "is_logged_in" else False
                 st.session_state.current_page = "home"
+                st.query_params.clear()
                 st.rerun()
 
         elif st.session_state.user_type == "admin" and st.session_state.is_logged_in:
@@ -106,6 +110,7 @@ def render_sidebar():
                 st.session_state.user_type = None
                 st.session_state.is_logged_in = False
                 st.session_state.current_page = "home"
+                st.query_params.clear()
                 st.rerun()
 
 
