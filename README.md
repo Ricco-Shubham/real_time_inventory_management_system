@@ -177,13 +177,13 @@ python main.py
 
 ## 🧯 Troubleshooting
 
-- `Error connecting to PostgreSQL database`: verify `.env` values (`host`, `dbname`, `user`, `password`, `port`).
+- `Error connecting to PostgreSQL database`: verify `.env` values (`DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_PORT`).
 - `relation does not exist`: required tables are not created yet.
 - Admin insights/bills not generated: ensure folders `insights_img`, `Inventory_Insights`, and `order_bills` exist (app usually creates output folders when needed).
 
 ## 🚀 Future Improvements
-- Integrate visualization dashboards (sales trends, product demand, etc.)
+- Integrating AI insights generator for generating real time reports
 - Expose REST APIs for frontend or mobile integration
 
-## Video Demo of Project
+## Video Demo of Project CLI version
 ![Watch the video](https://www.linkedin.com/posts/riccoshubham_python-supabase-postgresql-ugcPost-7371959764836306944-xWxd?utm_source=share&utm_medium=member_desktop&rcm=ACoAADE2h3cBX01qWrGrBr3icVyP1A2Uh21b9hE)
